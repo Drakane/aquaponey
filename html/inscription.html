@@ -1,37 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inscription a la FDAP</title>
+    <title>Inscription à la FDAP</title>
     <link rel="stylesheet" href="style.css"/>
-    
 </head>
 <body>
-<ul><a href="index.html">Accueil</a> </ul>
-    
-<main>
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required><br>
+    <header>
+        <div class="header-container">
+            <img src="la fédération aquaponey.png" alt="Logo FDAP" class="logo-pg"/>
+            <h1>La FDAP<br/>Fédération d'aquaponey</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="La Fédération.html">La Fédération</a></li>
+                <li><a href="nos-partenaire.html">Nos Partenaires</a></li>
+                <li><a href="Événements.html">Événements</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" required><br>
+    <main>
+        <section class="inscription-section">
+            <h2>Inscription à la FDAP</h2>
+            <div class="inscription-container">
+                <form class="inscription-form">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required><br>
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
 
-        <label for="age">Âge :</label>
-        <input type="number" id="age" name="age" min="1" required><br>
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-        <button type="submit">S'inscrire</button>
-    </form>
-    <p> en vous inscrivant vous recevrez votre carte de membre</p>
+                    <div class="form-group">
+                        <label for="age">Âge :</label>
+                        <input type="number" id="age" name="age" min="1" required>
+                    </div>
 
-    <img src="carte membre.png" alt="carte" class="wave-image"/> 
+                    <div class="form-group">
+                        <label for="niveau">Niveau en aquaponey :</label>
+                        <select id="niveau" name="niveau" required>
+                            <option value="">Sélectionnez votre niveau</option>
+                            <option value="debutant">Débutant</option>
+                            <option value="intermediaire">Intermédiaire</option>
+                            <option value="avance">Avancé</option>
+                        </select>
+                    </div>
 
-</main>
+                    <div class="form-group">
+                        <label for="message">Message (optionnel) :</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
 
+                    <button type="submit" class="submit-btn">S'inscrire</button>
+                </form>
+
+                <div class="inscription-info">
+                    <h3>Avantages de l'inscription</h3>
+                    <ul>
+                        <li>✨ Carte de membre personnalisée</li>
+                        <li>🏆 Accès aux compétitions</li>
+                        <li>📚 Formations spécialisées</li>
+                        <li>🤝 Réseau de passionnés</li>
+                    </ul>
+                    <img src="carte membre.png" alt="Carte de membre" class="membership-card"/>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 La FDAP - Fédération d'aquaponey</p>
+    </footer>
 </body>
 </html>
